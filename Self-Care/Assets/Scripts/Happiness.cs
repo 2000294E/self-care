@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Happiness : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Slider happy;
+
+    //code used to set the value of the slider
+    public void SetHappy(int happiness)
     {
-        
+        happy.value = happiness;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
