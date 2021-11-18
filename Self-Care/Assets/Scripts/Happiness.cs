@@ -7,7 +7,7 @@ public class Happiness : MonoBehaviour
     public Slider happy;
 
     //code used to set the value of the slider
-    public void SetHappy(int happiness)
+    public void SetHappy(float happiness)
     {
         happy.value = happiness;
     }

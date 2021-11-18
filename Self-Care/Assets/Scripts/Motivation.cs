@@ -8,7 +8,7 @@ public class Motivation : MonoBehaviour
     public Slider motivation;
 
     //code used to set the value of the slider
-    public void SetMotivation(int motive)
+    public void SetMotivation(float motive)
     {
         motivation.value = motive;
     }

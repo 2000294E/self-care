@@ -6,37 +6,70 @@ public class Actions : MonoBehaviour
 {
     public Happiness happy;
     public Motivation motive;
+    public float happinessMultiply;
+    public float motiveMultiply;
+
+
+    public void MotiveMultiplier(float motive)
+    {
+        PlayerPrefs.SetFloat("MotiveMultiplier", (PlayerPrefs.GetFloat("MotiveMultiplier") + motive));
+    }
+
+    public void HappyMultiplier(float motive)
+    {
+        PlayerPrefs.SetFloat("HappyMultiplier", (PlayerPrefs.GetFloat("HappyMultiplier") + motive));
+    }
 
     //adds happiness points based on what is put in the inspector
-    public void ModifyHappiness(int happiness)
+    public void ModifyHappiness(float happiness)
     {
-        PlayerPrefs.SetInt("Happiness", (PlayerPrefs.GetInt("Happiness") + happiness));
-        happy.SetHappy(PlayerPrefs.GetInt("Happiness"));
-        Debug.Log("happiness" + PlayerPrefs.GetInt("Happiness"));
+        if (happiness >0)
+        {
+            PlayerPrefs.SetFloat("Happiness", ((PlayerPrefs.GetFloat("Happiness") + happiness) * PlayerPrefs.GetFloat("MotiveMultiplier")));
+            happy.SetHappy(PlayerPrefs.GetFloat("Happiness"));
+            Debug.Log("happiness" + PlayerPrefs.GetFloat("Happiness"));
+        }
+        else if (happiness < 0)
+        {
+            PlayerPrefs.SetFloat("Happiness", (PlayerPrefs.GetFloat("Happiness") + happiness));
+            happy.SetHappy(PlayerPrefs.GetFloat("Happiness"));
+            Debug.Log("happiness" + PlayerPrefs.GetFloat("Happiness"));
+        }
+
     }
 
     //adds motivation points based on what is put in the inspector
-    public void ModifyMotivation(int motivation)
+    public void ModifyMotivation(float motivation)
     {
-        PlayerPrefs.SetInt("Motivation", (PlayerPrefs.GetInt("Motivation") + motivation));
-        motive.SetMotivation(PlayerPrefs.GetInt("Motivation"));
-        Debug.Log("motivaiton" + PlayerPrefs.GetInt("Motivation"));
+        if (motivation > 0)
+        {
+            PlayerPrefs.SetFloat("Motivation", ((PlayerPrefs.GetFloat("Motivation") + motivation) * PlayerPrefs.GetFloat("HappyMultiplier")));
+            motive.SetMotivation(PlayerPrefs.GetFloat("Motivation"));
+            Debug.Log("motivaiton" + PlayerPrefs.GetFloat("Motivation"));
+        }
+        else if(motivation < 0)
+        {
+            PlayerPrefs.SetFloat("Motivation", (PlayerPrefs.GetFloat("Motivation") + motivation));
+            motive.SetMotivation(PlayerPrefs.GetFloat("Motivation"));
+            Debug.Log("motivaiton" + PlayerPrefs.GetFloat("Motivation"));
+        }
+
     }
 
     //code to reset entire motivation value to 25 
 
-    public void ResetMotivation(int motivation)
+    public void ResetMotivation(float motivation)
     {
-        PlayerPrefs.SetInt("Motivation",25);
-        motive.SetMotivation(PlayerPrefs.GetInt("Motivation"));
-        Debug.Log("motivaiton" +PlayerPrefs.GetInt("Motivation"));
+        PlayerPrefs.SetFloat("Motivation",25);
+        motive.SetMotivation(PlayerPrefs.GetFloat("Motivation"));
+        Debug.Log("motivaiton" +PlayerPrefs.GetFloat("Motivation"));
     }
 
     //code to reset entire happiness value to 25 
-    public void ResetHappiness(int happiness)
+    public void ResetHappiness(float happiness)
     {
-        PlayerPrefs.SetInt("Happiness", 25);
-        happy.SetHappy(PlayerPrefs.GetInt("Happiness"));
-        Debug.Log("happiness" + PlayerPrefs.GetInt("Happiness"));
+        PlayerPrefs.SetFloat("Happiness", 25);
+        happy.SetHappy(PlayerPrefs.GetFloat("Happiness"));
+        Debug.Log("happiness" + PlayerPrefs.GetFloat("Happiness"));
     }
 }

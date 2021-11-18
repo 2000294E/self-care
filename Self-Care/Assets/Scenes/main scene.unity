@@ -182,11 +182,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 3
+    m_MaxSize: 54
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -261,11 +261,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 3
+    m_MaxSize: 54
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -406,11 +406,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 58
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -525,8 +525,8 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: -3
   m_MaxValue: 100
-  m_WholeNumbers: 1
-  m_Value: 1
+  m_WholeNumbers: 0
+  m_Value: 25
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -824,11 +824,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 54
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1222,8 +1222,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -127}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 5, y: -143}
+  m_SizeDelta: {x: 317.2114, y: 61.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442554742
 MonoBehaviour:
@@ -1239,6 +1239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   happy: {fileID: 0}
   motive: {fileID: 1762767204}
+  happinessMultiply: 0
+  motiveMultiply: 0
 --- !u!114 &1442554743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,8 +1372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -42}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 5, y: -20.772297}
+  m_SizeDelta: {x: 317.2114, y: 61.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588062253
 MonoBehaviour:
@@ -1387,6 +1389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   happy: {fileID: 655777617}
   motive: {fileID: 1762767204}
+  happinessMultiply: 0
+  motiveMultiply: 0
 --- !u!114 &1588062254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1530,8 +1534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 52}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 5, y: 101.46}
+  m_SizeDelta: {x: 317.2114, y: 61.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588253177
 MonoBehaviour:
@@ -1547,6 +1551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   happy: {fileID: 655777617}
   motive: {fileID: 1762767204}
+  happinessMultiply: 0
+  motiveMultiply: 0
 --- !u!114 &1588253178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,8 +1696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 5, y: 40.341736}
+  m_SizeDelta: {x: 317.2114, y: 61.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746797798
 MonoBehaviour:
@@ -1707,6 +1713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   happy: {fileID: 655777617}
   motive: {fileID: 1762767204}
+  happinessMultiply: 0
+  motiveMultiply: 0
 --- !u!114 &1746797799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,8 +1920,8 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: -3
   m_MaxValue: 100
-  m_WholeNumbers: 1
-  m_Value: 100
+  m_WholeNumbers: 0
+  m_Value: 25
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1976,11 +1984,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 5
+    m_MaxSize: 54
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2108,8 +2116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -91}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 4.9999847, y: -81.885994}
+  m_SizeDelta: {x: 317.2114, y: 61.114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131772804
 MonoBehaviour:
@@ -2125,6 +2133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   happy: {fileID: 655777617}
   motive: {fileID: 0}
+  happinessMultiply: 0
+  motiveMultiply: 0
 --- !u!114 &2131772805
 MonoBehaviour:
   m_ObjectHideFlags: 0
